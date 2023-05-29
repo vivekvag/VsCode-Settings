@@ -1,6 +1,6 @@
 {
 	"workbench.startupEditor": "newUntitledFile",
-	"editor.fontSize": 17,
+	"editor.fontSize": 16,
 	"editor.wordWrap": "wordWrapColumn",
 	"editor.renameOnType": true,
 	"[html]": {
@@ -36,7 +36,7 @@
 	"editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
 	"editor.fontLigatures": true,
 	"css.lint.unknownAtRules": "ignore",
-	"terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+	"terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
 	"terminal.integrated.fontFamily": "MesloLGS NF",
 	"workbench.colorCustomizations": {
 		"terminal.background": "#1D1F21",
@@ -61,13 +61,34 @@
 		"terminal.ansiYellow": "#ABA800",
 
 		"activityBar.background": "#1D1F21",
-		// "statusBar.background": "#1D1F21",
-		"editor.background": "#212529"
+		"editor.background": "#1f2229"
 	},
-	"vsicons.dontShowNewVersionMessage": true,
 	"settingsSync.ignoredSettings": [],
-	"terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
 	"editor.bracketPairColorization.enabled": true,
 	"explorer.confirmDelete": false,
-	"javascript.updateImportsOnFileMove.enabled": "always"
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell"
+		},
+		"Command Prompt": {
+			"path": [
+				"${env:windir}\\Sysnative\\cmd.exe",
+				"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Git Bash": {
+			"source": "Git Bash"
+		},
+		"Ubuntu (WSL)": {
+			"path": "C:\\Windows\\System32\\wsl.exe",
+			"args": [
+				"-d",
+				"Ubuntu"
+			]
+		}
+	}
 }
